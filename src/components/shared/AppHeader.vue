@@ -12,12 +12,12 @@ import { Disclosure } from "@headlessui/vue";
             <router-link to="/">
               <img
                 class="block h-6 w-auto lg:hidden"
-                src="public/favicon.ico"
+                src="../../../public/favicon.ico"
                 alt="Heart"
               />
               <img
                 class="hidden h-8 w-auto lg:block"
-                src="public/favicon.ico"
+                src="../../../public/favicon.ico"
                 alt="Heart"
               />
             </router-link>
