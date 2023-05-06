@@ -4,7 +4,9 @@
     class="mx-auto max-w-7xl px-2 flex flex-col justify-center items-center lg:h-screen py-20 font-press-start"
   >
     <p class="text-white text-2xl">Oops!</p>
-    <p class="text-fuchsia-600 pt-12 text-xs md:text-xl lg:text-3xl">
+    <p
+      class="text-fuchsia-600 pt-12 text-xs md:text-xl lg:text-3xl text-center"
+    >
       This page it's under construction
     </p>
     <div class="bar-container">

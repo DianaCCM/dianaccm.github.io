@@ -19,8 +19,8 @@ export default {
       let random_color = colors[Math.floor(Math.random() * colors.length)];
       document.querySelector(".content-cloud").style.color = random_color;
       let divTagCloud = document.querySelector(".tagcloud");
-      divTagCloud.style.height = "470px";
-      divTagCloud.style.width = "400px";
+      divTagCloud.style.height = "300px";
+      divTagCloud.style.width = "300px";
     },
     cloudScript(url) {
       return new Promise((resolve, reject) => {
@@ -59,7 +59,7 @@ export default {
 </script>
 
 <template>
-  <div class="sm:pl-14">
+  <div class="sm:pl-28 lg:pt-24 py-20">
     <span
       class="content-cloud text-xxs md:text-sm lg:text-xl font-press-start"
     ></span>
