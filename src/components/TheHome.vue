@@ -7,6 +7,11 @@ export default {
     IonButton,
     IonIcon,
   },
+  methods: {
+    /*scrollToTop() {
+      window.scrollTo(0, 0);
+    },*/
+  },
   setup() {
     return { heartHalfOutline, codeOutline };
   },
@@ -15,7 +20,7 @@ export default {
 
 <template>
   <div class="max-auto max-w-7xl flex flex-col">
-    <div class="relative px-4 pt-2">
+    <div class="relative px-4 pt-20 sm:pt-2">
       <div class="absolute right-0 flex justify-end pr-8">
         <img
           class="block sparks_dec"
@@ -24,30 +29,51 @@ export default {
         />
       </div>
       <div
-        class="font-princess-sofia inset-y-0 left-0 text-4xl md:text-9xl lg:text-giant"
+        class="font-princess-sofia inset-y-0 left-0 text-5xl md:text-9xl lg:text-giant"
       >
         <h3 class="animate-text px-14 pt-8 pb-4 sm:py-14">
           Hi,<br />
-          I'm Diana...
+          I'm Diana
         </h3>
       </div>
       <div
         class="font-press-start inset-y-0 left-0 text-xs md:text-lg lg:text-xl"
       >
-        <h6 class="grandient-text pl-14 sm:pl-20">I'm a Web Developer</h6>
+        <h6 class="grandient-text pl-14 sm:pl-20">Web Developer</h6>
       </div>
     </div>
-    <div class="grid grid-cols-2 pb-32">
-      <div></div>
-      <div class="flex justify-end">
-        <ion-button fill="outline" size="large" color="pink">
-          My profile&nbsp;<ion-icon :icon="heartHalfOutline"></ion-icon
-        ></ion-button>
-        <ion-button fill="outline" size="large" color="pink">
-          My projects&nbsp;<ion-icon :icon="codeOutline"></ion-icon
-        ></ion-button>
+    <div class="pb-24 lg:pt-0 pt-16">
+      <div
+        class="flex flex-col sm:flex-row lg:justify-end justify-center gap-4"
+      >
+        <div class="grid justify-center py-4 md:py-0">
+          <router-link to="/about">
+            <ion-button
+              fill="outline"
+              class="md:[font-size:20px] md:[height:2.8em;]"
+              color="pink"
+              shape="round"
+            >
+              My profile&nbsp;<ion-icon
+                :icon="heartHalfOutline"
+              ></ion-icon></ion-button
+          ></router-link>
+        </div>
+        <div class="grid justify-center">
+          <router-link to="/projects">
+            <ion-button
+              fill="outline"
+              class="md:[font-size:20px] md:[height:2.8em;]"
+              color="pink"
+              shape="round"
+            >
+              My projects&nbsp;<ion-icon :icon="codeOutline"></ion-icon
+            ></ion-button>
+          </router-link>
+        </div>
       </div>
     </div>
+    <!--router-link @click="$scrollToTop"-->
   </div>
 </template>
 
