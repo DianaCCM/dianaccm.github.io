@@ -39,6 +39,6 @@ export default {
 
 <style scoped>
 .border-pink {
-  border-color: rgb(192 38 211);
+  border-color: rgba(192, 38, 211, 0.35);
 }
 </style>

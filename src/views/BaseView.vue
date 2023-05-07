@@ -28,7 +28,7 @@ export default {
   },
 
   mounted() {
-    let particles = particles_starter();
+    let particles = particles_starter(this.mouseMove);
     if (particles) {
       this.sparks = particles.sparks;
       this.anime = particles.anime;
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <template>
-  <div @mousemove="mouseMove" class="anime-container relative">
+  <div class="anime-container relative">
     <div class="mx-auto max-w-7xl px-2 flex flex-col">
       <AppHeader />
 
@@ -51,4 +51,13 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

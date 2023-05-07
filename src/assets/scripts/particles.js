@@ -9,9 +9,10 @@ const circularRandom = (r) => {
   return { x: x, y: y, r: r };
 };
 
-const particles_starter = () => {
+const particles_starter = (fn) => {
   let container_sparks = document.querySelector(".anime-container");
-  if (!container_sparks) return null;
+  if (!container_sparks || window.innerWidth < 1000) return null;
+  container_sparks.addEventListener("mousemove", fn, false);
   let sparkCount = 100;
   let sparkParticleCount = 6;
 

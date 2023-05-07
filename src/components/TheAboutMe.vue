@@ -2,6 +2,9 @@
 export default {
   data() {},
   components: {},
+  mounted() {
+    window.scrollTo(0, 0);
+  },
 };
 </script>
 
