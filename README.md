@@ -1,14 +1,10 @@
-# my-dev-project
+# Diana CCM
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a personal project to show my [profile](https://dianaccm.github.io/).
 
-## Recommended IDE Setup
+## Techs
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+[Vue](https://vuejs.org/guide/quick-start.html) + [Tailwindcss](https://tailwindcss.com/docs/guides/vite) + [Ionic](https://ionicframework.com/docs/vue/overview) + [VSCode](https://code.visualstudio.com/).
 
 ## Project Setup
 
