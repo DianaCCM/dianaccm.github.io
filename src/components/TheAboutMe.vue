@@ -25,7 +25,7 @@ export default {
       class="flex flex-col justify-center items-center text-white text-xs md:text-sm lg:text-xl text-center"
     >
       <span class="my-text-up pb-2 font-press-start">
-        I <span class="text-red">&#10084;</span> create things for the web.<br
+        I <span class="text-red">&#10084;</span> creating things for the web.<br
       /></span>
       <span class="my-text-up">
         I'm passionate about embracing new technologies and challenges.

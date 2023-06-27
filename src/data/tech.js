@@ -2,12 +2,11 @@ const tech = [
   "JavaScript",
   "CSS",
   "HTML",
-  "Python",
   "Git",
   "NodeJS",
   "VueJS",
   "MySQL",
-  "SQL Server",
+  "SQL",
 ];
 
 export default tech;
